@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family:  sans-serif,Arial, Helvetica;
+    background-color: rgb(12, 128, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    margin: 3rem 0;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    box-shadow: 0px 5px 50px rgba(255,255,255,0.6);
+    padding: 1rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+
+}
+.form{
+    padding: 2rem 0.5rem;
+}
+
+.form-control{
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius:0.5rem ;
+    -webkit-border-radius:0.5rem ;
+    -moz-border-radius:0.5rem ;
+    -ms-border-radius:0.5rem ;
+    -o-border-radius:0.5rem ;
+    box-shadow: 0px 5px 50px rgba(0,0,0,0.05); ;
+    padding:0.5rem 0.2rem ;
+    width: 100%;
+}
+.form-control.success input{
+    border:2px solid #2eccc4 ;
+}
+.form-control.error input{
+    border:2px solid #e74c3c ;
+}
+.form-control i{
+    color:rgb(12, 128, 136);
+    position: absolute;
+    top:35px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+visibility: visible;
+color:#2eccc4
+}
+.form-control.error i.fa-exclamation-circle{
+visibility: visible;
+color:#e74c3c;
+}
+.form-control small{
+    position: absolute;
+    bottom: 22px;
+    left: 5px;
+    visibility: hidden;
+}
+.form-control.error small{
+    color:#e74c3c;
+    visibility: visible;
+}
+.form button{
+    background-color: rgb(12, 128, 136);
+    border: 2px solid rgb(90, 146, 150);
+    color:#fff;
+    width: 100%;
+    display: block;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.form button.submit.disabled{
+    pointer-events: none;
+    }
